@@ -4,44 +4,14 @@
     "http://colta.ru/articles/vokrug_gorizontali/29704-grigory-yudin-protesty-bolshoy-razgovor",
     "http://colta.ru/articles/vokrug_gorizontali/29705-svetlana-barsukova-interview-informal-practices-in-russia",
     "http://colta.ru/articles/vokrug_gorizontali/29706-ilia-budraytskis-interview-dissidents",
-    "http://colta.ru/articles/vokrug_gorizontali/29707-bezopasnaya-rabota-v-seti"
+    "http://colta.ru/articles/vokrug_gorizontali/29707-bezopasnaya-rabota-v-seti",
+    "http://colta.ru/articles/specials/29708-neyasnaya-rossiya-buduschego-elena-fanaylova-uyazvimoe-buduschee",
+    "http://colta.ru/articles/specials/29709-neyasnaya-rossiya-buduschego-lina-bulahova-i-oksana-timofeeva-buduschego-ne-budet",
+    "http://colta.ru/articles/specials/29710-neyasnaya-rossiya-buduschego-olga-romanova-u-razbitogo-koryta",
+    "http://colta.ru/articles/specials/29711-neyasnaya-rossiya-buduschego-aleksandr-morozov-bez-buduschego",
+    "http://colta.ru/articles/specials/29712-neyasnaya-rossiya-buduschego-kirill-medvedev-byt-russkim-soprotivlyatsya-smerti"
   ],
   "queue": [
-    {
-      "title": "Уязвимое будущее",
-      "link": "http://colta.ru/articles/specials/29708-neyasnaya-rossiya-buduschego-elena-fanaylova-uyazvimoe-buduschee",
-      "dt": "2023-01-23T20:01:00+00:00",
-      "summary": "Елена Фанайлова разбирается с настоящим",
-      "image": "https://www.colta.ru/storage/post/29708/cover_picture.jpg"
-    },
-    {
-      "title": "Будущего не будет",
-      "link": "http://colta.ru/articles/specials/29709-neyasnaya-rossiya-buduschego-lina-bulahova-i-oksana-timofeeva-buduschego-ne-budet",
-      "dt": "2023-01-23T20:02:00+00:00",
-      "summary": "Лина Булахова и Оксана Тимофеева отменяют власть и самих себя",
-      "image": "https://www.colta.ru/storage/post/29709/cover_picture.jpg"
-    },
-    {
-      "title": "У разбитого корыта",
-      "link": "http://colta.ru/articles/specials/29710-neyasnaya-rossiya-buduschego-olga-romanova-u-razbitogo-koryta",
-      "dt": "2023-01-23T20:03:00+00:00",
-      "summary": "Ольга Романова о лучшем варианте из ужасных",
-      "image": "https://www.colta.ru/storage/post/29710/cover_picture.jpg"
-    },
-    {
-      "title": "Без будущего",
-      "link": "http://colta.ru/articles/specials/29711-neyasnaya-rossiya-buduschego-aleksandr-morozov-bez-buduschego",
-      "dt": "2023-01-23T20:04:00+00:00",
-      "summary": "Александр Морозов о возможных выходах из катастрофы 2022 года",
-      "image": "https://www.colta.ru/storage/post/29711/cover_picture.jpg"
-    },
-    {
-      "title": "Быть русским, сопротивляться Смерти",
-      "link": "http://colta.ru/articles/specials/29712-neyasnaya-rossiya-buduschego-kirill-medvedev-byt-russkim-soprotivlyatsya-smerti",
-      "dt": "2023-01-23T20:05:00+00:00",
-      "summary": "Будущее зависит от практик выживания, считает Кирилл Медведев",
-      "image": "https://www.colta.ru/storage/post/29712/cover_picture.jpg"
-    },
     {
       "title": "Что мешает антивоенному движению объединиться?",
       "link": "http://colta.ru/articles/vokrug_gorizontali/29713-anti-war-movement",
@@ -1091,6 +1061,657 @@
       "dt": "2026-09-21T10:05:00+00:00",
       "summary": "Партия власти «Единая Россия» будет получать из федерального бюджета около 5,5 млрд руб. в год по итогам прошедших выборов в Госдуму, подсчитала «Верстка». Согласно действующему законодательству, если партия в ходе голосования набирает более 3% голосов по федеральному списку, то за каждого проголосовавшего гражданина из бюджета ей выделяется 152 руб. ежегодно. По данным Центральной избирательной комиссии (ЦИК), после подсчета 96,55% протоколов «ЕдРо» получила 36,7 млн голосов.",
       "image": "https://ru.themoscowtimes.com/image/article_640/e8/2026-09-14T171231Z_911626053_RC2WINAROX1B_RTRMADP_3_RUSSIA-ELECTION1.JPG"
+    },
+    {
+      "title": "«Единая Россия» уточнила число участников войны в новой Госдуме: 49 вместо 86",
+      "link": "https://istories.media/news/2026/09/21/edinaya-rossiya-utochnila-chislo-uchastnikov-voini-v-novoi-gosdume-49-vmesto-86/",
+      "dt": "2026-09-21T10:29:44+00:00",
+      "summary": "Утром партия сообщала о 86 будущих депутатах — «участниках СВО», но позже попросила СМИ удалить эту информацию",
+      "image": null
+    },
+    {
+      "title": "Управляющий «Ашаном» и «Леманой ПРО» генерал МВД направил менеджменту компаний список требований к работе",
+      "link": "https://istories.media/news/2026/09/21/upravlyayuschiy-ashanom-i-lemanoy-pro-general-mvd-napravil-menedzhmentu-kompaniy-spisok-trebovaniy-k-rabote/",
+      "dt": "2026-09-21T11:43:14+00:00",
+      "summary": "Он потребовал сохранить закупки, поставки и работу магазинов в прежнем режиме",
+      "image": null
+    },
+    {
+      "title": "Суды начали отказывать в АГС, ссылаясь на прохождение курса ОБЖ в школе",
+      "link": "https://istories.media/news/2026/09/21/sudi-nachali-otkazivat-v-ags-ssilayas-na-prokhozhdenie-kursa-obzh-v-shkole/",
+      "dt": "2026-09-21T12:07:14+00:00",
+      "summary": "В рамках этого предмета ученики получают начальную военную подготовку",
+      "image": null
+    },
+    {
+      "title": "Минфин анонсировал изменения налогового законодательства для покрытия расходов на восстановление объектов после обстрелов",
+      "link": "https://istories.media/news/2026/09/21/rossiyane-oplatyat-vosstanovlenie-obektov-posle-obstrelov-novymi-nalogami-zayavili-v-minfine/",
+      "dt": "2026-09-21T15:05:45+00:00",
+      "summary": "Анонс реформы последовал сразу после выборов",
+      "image": null
+    },
+    {
+      "title": "Чешские журналисты выяснили, что сотрудники Z-канала «Рыбарь» работают в Европе",
+      "link": "https://meduza.io/news/2026/09/21/cheshskie-zhurnalisty-vyyasnili-chto-sotrudniki-z-kanala-rybar-rabotayut-v-evrope",
+      "dt": "2026-09-21T16:14:09+00:00",
+      "summary": "Журналисты чешского издания Seznam Zprávy выяснили, что представители аналитического центра «Рыбарь» (это один из крупнейших провоенных телеграм-каналов, близких к Минобороны РФ) работают в Европе и регулярно берут интервью у политиков, журналистов и экспертов.",
+      "image": "https://meduza.io/imgly/share/1790085202/news/2026/09/21/cheshskie-zhurnalisty-vyyasnili-chto-sotrudniki-z-kanala-rybar-rabotayut-v-evrope"
+    },
+    {
+      "title": "Руководитель московских дружинников ударил девушку-члена УИК за попытку фиксировать нарушения",
+      "link": "https://istories.media/news/2026/09/21/rukovoditel-moskovskikh-druzhinnikov-udaril-devushku-chlena-uik-za-popitku-fiksirovat-narusheniya/",
+      "dt": "2026-09-21T16:27:47+00:00",
+      "summary": "Он работает на мэрию как специалист по безопасности и рассказывает школьникам о праве и «предателях»",
+      "image": "https://static.istories.media/uploaded/images/dd6bc8c11f684784ba6eae0b4be78d00-1920x960px_1x.webp"
+    },
+    {
+      "title": "НПЗ в Капотне остановил работу после очередного удара ВСУ",
+      "link": "https://istories.media/news/2026/09/21/npz-v-kapotne-ostanovil-rabotu-posle-ocherednogo-udara-vsu/",
+      "dt": "2026-09-21T16:41:45+00:00",
+      "summary": "Он критически важен для Москвы",
+      "image": null
+    },
+    {
+      "title": "Reuters: Московский НПЗ остановил работу после украинской атаки в день выборов в Госдуму",
+      "link": "https://meduza.io/news/2026/09/21/reuters-moskovskiy-npz-ostanovil-rabotu-posle-ukrainskoy-ataki-v-den-vyborov-v-gosdumu",
+      "dt": "2026-09-21T17:13:54+00:00",
+      "summary": "Московский нефтеперерабатывающий завод (НПЗ) в Капотне прекратил переработку нефти из-за атаки украинских беспилотников 20 сентября, в последний и основной день выборов в Госдуму. Об этом Reuters сообщили три источника в отрасли.",
+      "image": "https://meduza.io/imgly/share/1790010835/news/2026/09/21/reuters-moskovskiy-npz-ostanovil-rabotu-posle-ukrainskoy-ataki-v-den-vyborov-v-gosdumu"
+    },
+    {
+      "title": "Суды стали отказывать призывникам в альтернативной службе, ссылаясь на прохождение школьного курса ОБЖ",
+      "link": "https://meduza.io/news/2026/09/21/sudy-stali-otkazyvat-prizyvnikam-v-alternativnoy-sluzhbe-ssylayas-na-prohozhdenie-shkolnogo-kursa-obzh",
+      "dt": "2026-09-21T17:33:14+00:00",
+      "summary": "Призывные комиссии и суды все чаще используют школьный предмет ОБЖ (теперь он называется ОБЗР) как причину отказать призывникам, которые хотят заменить военную службу на альтернативную гражданскую. Об этом рассказал глава юридического отдела «Движения сознательных отказчиков» Артем Клыга.",
+      "image": "https://meduza.io/imgly/share/1790013092/news/2026/09/21/sudy-stali-otkazyvat-prizyvnikam-v-alternativnoy-sluzhbe-ssylayas-na-prohozhdenie-shkolnogo-kursa-obzh"
+    },
+    {
+      "title": "Трамп заявил, что США будут покупать белорусский калий вместо канадского. Судя по словам Лукашенко, это невозможно",
+      "link": "https://meduza.io/news/2026/09/21/tramp-zayavil-chto-ssha-budut-pokupat-belorusskiy-kaliy-vmesto-kanadskogo-sudya-po-slovam-lukashenko-eto-nevozmozhno",
+      "dt": "2026-09-21T18:36:32+00:00",
+      "summary": "США работают над «крупной сделкой» по закупке калийных удобрений у Беларуси, написал президент США Дональд Трамп в своей социальной сети Truth Social.",
+      "image": "https://meduza.io/imgly/share/1790015792/news/2026/09/21/tramp-zayavil-chto-ssha-budut-pokupat-belorusskiy-kaliy-vmesto-kanadskogo-sudya-po-slovam-lukashenko-eto-nevozmozhno"
+    },
+    {
+      "title": "«Новая газета Европа»: без вбросов «Единая Россия» получила бы на выборах в Госдуму только 34%",
+      "link": "https://meduza.io/news/2026/09/21/novaya-gazeta-evropa-bez-vbrosov-edinaya-rossiya-poluchila-by-na-vyborah-v-gosdumu-tolko-34",
+      "dt": "2026-09-21T20:02:15+00:00",
+      "summary": "Без фальсификаций результат «Единой России» на выборах в Госдуму составил бы около 34%. Это в 1,7 раза меньше официального результата партии — почти 58% голосов. Такой вывод сделала «Новая газета Европа», проведя подсчеты по методу электорального аналитика Сергея Шпилькина.",
+      "image": "https://meduza.io/imgly/share/1790067240/news/2026/09/21/novaya-gazeta-evropa-bez-vbrosov-edinaya-rossiya-poluchila-by-na-vyborah-v-gosdumu-tolko-34"
+    },
+    {
+      "title": "Зеленский встретился с главой ЦРУ Джоном Рэтклиффом. Недавно тот впервые летал на переговоры в Москву",
+      "link": "https://meduza.io/news/2026/09/21/zelenskiy-vstretilsya-s-glavoy-tsru-dzhonom-retkliffom-nedavno-tot-vpervye-letal-na-peregovory-v-moskvu",
+      "dt": "2026-09-21T20:59:11+00:00",
+      "summary": "Президент Украины Владимир Зеленский провел встречу с директором ЦРУ Джоном Рэтклиффом, пишет Reuters со ссылкой на два источника.",
+      "image": "https://meduza.io/imgly/share/1790024351/news/2026/09/21/zelenskiy-vstretilsya-s-glavoy-tsru-dzhonom-retkliffom-nedavno-tot-vpervye-letal-na-peregovory-v-moskvu"
+    },
+    {
+      "title": "Можно ли защититься от мобилизации или облав? Да. Отвечаем, как это сделать, — в одной картинке. Отправьте ее друзьям и близким в зоне риска",
+      "link": "https://meduza.io/feature/2026/09/22/mozhno-li-zaschititsya-ot-mobilizatsii-ili-oblav-da-otvechaem-kak-eto-sdelat-v-odnoy-kartinke",
+      "dt": "2026-09-22T05:06:11+00:00",
+      "summary": "Спустя четыре года после объявления мобилизации в России ходят слухи о новой. Мы до сих пор не знаем, насколько это возможно, но в любом случае всем полезно понимать, как себя защитить. Тем более и вне мобилизации рисков хватает. Например, можно попасть в облаву. Вместе с руководителем юридического отдела «Движения сознательных отказчиков» Артемом Клыгой и главой юридического отдела «Школы призывника» Тимофеем Васькиным мы подготовили памятку о том, какие действия стоит предпринять. Основные рек",
+      "image": "https://meduza.io/image/attachments/images/012/760/301/small/qXsqhq6BaTmZD043QcNv5A"
+    },
+    {
+      "title": "Украинские дроны атаковали Самару. На Куйбышевском НПЗ пожар",
+      "link": "https://meduza.io/news/2026/09/22/ukrainskie-drony-atakovali-samaru-zagorelsya-kuybyshevskiy-npz",
+      "dt": "2026-09-22T05:25:15+00:00",
+      "summary": "Украинские беспилотники в ночь на 22 сентября нанесли удар по Самаре. На территории Куйбышевского НПЗ начался пожар, пишет Astra, изучившая фото и видео очевидцев.",
+      "image": "https://meduza.io/imgly/share/1790059626/news/2026/09/22/ukrainskie-drony-atakovali-samaru-zagorelsya-kuybyshevskiy-npz"
+    },
+    {
+      "title": "Российские войска нанесли удары по Киеву, Днепру, Кривому Рогу и Павлограду",
+      "link": "https://meduza.io/news/2026/09/22/rossiyskie-voyska-nanesli-raketnye-udary-po-kievu-dnepru-krivomu-rogu-i-pavlogradu",
+      "dt": "2026-09-22T05:57:02+00:00",
+      "summary": "Войска РФ в ночь на 22 сентября атаковали Украину ракетами и дронами. Удары, в частности, были нанесены по Киеву, Днепру, Кривому Рогу и Павлограду.",
+      "image": "https://meduza.io/imgly/share/1790058273/news/2026/09/22/rossiyskie-voyska-nanesli-raketnye-udary-po-kievu-dnepru-krivomu-rogu-i-pavlogradu"
+    },
+    {
+      "title": "Белый дом в ответ на бойкот телеканалов запустил Trump TV — круглосуточный канал о президенте США",
+      "link": "https://meduza.io/news/2026/09/22/belyy-dom-v-otvet-na-boykot-telekanalov-zapustil-trump-tv-kruglosutochnyy-kanal-o-prezidente-ssha",
+      "dt": "2026-09-22T06:41:01+00:00",
+      "summary": "Белый дом запустил на ютубе круглосуточный канал о президенте США Дональде Трампе.",
+      "image": "https://meduza.io/imgly/share/1790059261/news/2026/09/22/belyy-dom-v-otvet-na-boykot-telekanalov-zapustil-trump-tv-kruglosutochnyy-kanal-o-prezidente-ssha"
+    },
+    {
+      "title": "Премьер-министр Венгрии выступил против строительства на территории страны хранилища нефти для Украины",
+      "link": "https://meduza.io/news/2026/09/22/premier-ministr-vengrii-vystupil-protiv-stroitelstva-na-territorii-strany-hranilischa-gaza-dlya-ukrainy",
+      "dt": "2026-09-22T07:10:01+00:00",
+      "summary": "Глава правительства Венгрии Петер Мадяр назвал угрозой планы строительства хранилища нефти для Украины на венгерской территории. Меморандум о строительстве в сентябре подписали украинский «Нафтогаз» и венгерская MOL.",
+      "image": "https://meduza.io/imgly/share/1790064261/news/2026/09/22/premier-ministr-vengrii-vystupil-protiv-stroitelstva-na-territorii-strany-hranilischa-gaza-dlya-ukrainy"
+    },
+    {
+      "title": "Куйбышевский НПЗ загорелся в Самаре после атаки дронов",
+      "link": "https://istories.media/news/2026/09/22/kuibishevskii-npz-zagorelsya-v-samare-posle-ataki-dronov/",
+      "dt": "2026-09-22T07:33:41+00:00",
+      "summary": "Один человек погиб, четверо пострадали при атаке на регион",
+      "image": null
+    },
+    {
+      "title": "Германия хочет ограничить Саксонии-Анхальт (там на выборах победила АдГ) доступ к секретным данным о России",
+      "link": "https://meduza.io/news/2026/09/22/germaniya-hochet-ogranichit-saksonii-anhalt-tam-na-vyborah-pobedila-adg-dostup-k-sekretnym-dannym-o-rossii",
+      "dt": "2026-09-22T08:09:08+00:00",
+      "summary": "Власти Германии готовятся ограничить доступ Саксонии-Анхальт к чувствительным данным разведки из-за победы «Альтернативы для Германии» на земельных выборах. В Берлине опасаются, что секретные сведения могут попасть в Москву. Об этом The New York Times рассказали 17 немецких и иностранных чиновников.",
+      "image": "https://meduza.io/imgly/share/1790064764/news/2026/09/22/germaniya-hochet-ogranichit-saksonii-anhalt-tam-na-vyborah-pobedila-adg-dostup-k-sekretnym-dannym-o-rossii"
+    },
+    {
+      "title": "«Один звонок, решение принято, тут же переписали цифру». Электоральный аналитик обнаружил, что «Справедливой России» добавили около 60 тысяч голосов",
+      "link": "https://meduza.io/news/2026/09/22/odin-zvonok-reshenie-prinyato-tut-uzhe-perepisali-tsifru-elektoralnyy-analitik-obnaruzhil-chto-spravedlivoy-rossii-dobavili-okolo-60-tysyach-golosov",
+      "dt": "2026-09-22T08:10:41+00:00",
+      "summary": "У «Справедливой России» в ходе подсчета голосов, поданных на выборах депутатов Госдумы, в середине дня 21 сентября прибавилось около 60 тысяч голосов. Об этом в эфире Carnegie Politika рассказал электоральный аналитик Станислав Андрейчук.",
+      "image": "https://meduza.io/imgly/share/1790069040/news/2026/09/22/odin-zvonok-reshenie-prinyato-tut-uzhe-perepisali-tsifru-elektoralnyy-analitik-obnaruzhil-chto-spravedlivoy-rossii-dobavili-okolo-60-tysyach-golosov"
+    },
+    {
+      "title": "В Турции произошла стрельба возле школы. Есть раненые",
+      "link": "https://meduza.io/news/2026/09/22/v-turtsii-proizoshla-strelba-vozle-shkoly-est-ranenye",
+      "dt": "2026-09-22T08:20:20+00:00",
+      "summary": "Стрельба произошла возле школы в городе Тургутлу на западе Турции около 8 утра по местному времени, пишет издание Sozcu.",
+      "image": "https://meduza.io/imgly/share/1790065220/news/2026/09/22/v-turtsii-proizoshla-strelba-vozle-shkoly-est-ranenye"
+    },
+    {
+      "title": "В фейсбуке и инстаграме заблокировали рекламу спектакля по Вирджинии Вулф в Барселоне из-за упоминания феминизма",
+      "link": "https://meduza.io/news/2026/09/22/v-feysbuke-i-instagrame-zablokirovali-reklamu-spektaklya-po-virdzhinii-vulf-iz-za-upominaniya-feminizma",
+      "dt": "2026-09-22T08:28:16+00:00",
+      "summary": "Театр Teatre Raval в Барселоне не смог запустить рекламу спектакля по эссе Вирджинии Вулф «Своя комната» в фейсбуке и инстаграме. Компания Meta заблокировала объявление из-за упоминания «социальных тем»: гражданских прав, феминизма и социальных реформ, пишет The Guardian.",
+      "image": "https://meduza.io/imgly/share/1790068743/news/2026/09/22/v-feysbuke-i-instagrame-zablokirovali-reklamu-spektaklya-po-virdzhinii-vulf-iz-za-upominaniya-feminizma"
+    },
+    {
+      "title": "Бывший мэр Белгорода Константин Полежаев погиб на войне",
+      "link": "https://meduza.io/news/2026/09/22/byvshiy-mer-belgoroda-konstantin-polezhaev-pogib-na-voyne",
+      "dt": "2026-09-22T08:39:42+00:00",
+      "summary": "Бывший мэр Белгорода Константин Полежаев погиб на войне, сообщили его близкие белгородскому изданию «Фонарь». Никаких подробностей издание не приводит.",
+      "image": "https://meduza.io/imgly/share/1790066382/news/2026/09/22/byvshiy-mer-belgoroda-konstantin-polezhaev-pogib-na-voyne"
+    },
+    {
+      "title": "Банки РФ привлекли на аукционе репо \"тонкой настройки\" 1 трлн р при спросе 2,6 трлн р -- ЦБР",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/banki-rf-privlekli-na-auktsione-repo-tonkoy-nastroyki-1-trln-r-pri-sprose-26-trln-r-tsbr-a206641",
+      "dt": "2026-09-22T08:47:09+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Российский ‌Центробанк на аукционе репо \"тонкой ​настройки\" во ​вторник ​предоставил ⁠банкам весь ‌предложенный лимит ‌в 1,0 триллиона ​рублей ‌по средневзвешенной ​ставке 14,2774% ‌годовых, следует из материалов регулятора.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/cd/206641__cd949e1d1fbae10978557851acfbfb7d.jpg"
+    },
+    {
+      "title": "Латвия заблокировала отмену европейских санкций против Усманова и Фридмана",
+      "link": "https://meduza.io/news/2026/09/22/latviya-zablokirovala-otmenu-evropeyskih-sanktsiy-protiv-usmanova-i-fridmana",
+      "dt": "2026-09-22T08:52:36+00:00",
+      "summary": "Латвия отказалась поддержать сделку, предусматривающую снятие санкций с российских бизнесменов Алишера Усманова и Михаила Фридмана в обмен на трехлетнее продление санкционного списка, в котором около трех тысяч человек и организаций, связанных с Россией.",
+      "image": "https://meduza.io/imgly/share/1790069894/news/2026/09/22/latviya-zablokirovala-otmenu-evropeyskih-sanktsiy-protiv-usmanova-i-fridmana"
+    },
+    {
+      "title": "«Трудно быть богом» — беззубый сериал по политической книге братьев Стругацких. С Ярмольником, Безруковым и рекламой «Росатома», но без образа будущего",
+      "link": "https://meduza.io/feature/2026/09/22/trudno-byt-bogom-bezzubyy-serial-po-politicheskoy-knige-bratiev-strugatskih",
+      "dt": "2026-09-22T08:58:59+00:00",
+      "summary": "В онлайн-кинотеатре Wink выходит сериал «Трудно быть богом» по мотивам повести братьев Стругацких. Авторы проекта заметно изменили сюжет книги: теперь мы следим за посланцем Земли доном Руматой с первых дней его работы в Арканаре. Персонажей стало больше, приключений — тоже, но пропало самое важное: внятный образ утопического будущего и тема науки как движущей силы прогресса. Если Алексей Герман в своем знаменитом фильме спорил с повестью Стругацких, то авторы сериала предпочитают просто игнорир",
+      "image": "https://meduza.io/image/attachments/images/012/763/216/small/5CPkViCGOWYtW8x4zPuQtQ"
+    },
+    {
+      "title": "На войне погиб бывший мэр Белгорода, осужденный за взятку",
+      "link": "https://istories.media/news/2026/09/22/na-voine-pogib-bivshii-mer-belgoroda-osuzhdennii-za-vzyatku/",
+      "dt": "2026-09-22T09:02:09+00:00",
+      "summary": "В 2024 году он подписал контракт, чтобы уйти от наказания",
+      "image": "https://static.istories.media/uploaded/images/964a670af7284ffda5d639163e4446b5-1920x960px_1x.webp"
+    },
+    {
+      "title": "НПЗ Джунда в Киргизии планирует нарастить переработку нефти в четыре раза в 27/26гг",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/npz-dzhunda-v-kirgizii-planiruet-narastit-pererabotku-nefti-v-chetyre-raza-v-2726gg-a206644",
+      "dt": "2026-09-22T09:07:16+00:00",
+      "summary": "БИШКЕК, 22 сен (Рейтер) - Мини-НПЗ Джунда в Киргизии планирует нарастить переработку нефти в 2027 году до 410.000 тонн со 100.000 тонн в 2026-м, сообщила ‌пресс-служба завода в письменном ответе на запрос Рейтер.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/37/206644__37ad095b2283341a5ab448034a2019ba.jpg"
+    },
+    {
+      "title": "Зеленский встретился с главой ЦРУ после его визита в Москву",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/zelenskii-vstretilsya-s-glavoi-tsru-posle-ego-vizita-v-moskvu-a206643",
+      "dt": "2026-09-22T09:13:00+00:00",
+      "summary": "Президент Украины Владимир Зеленский встретился с главой Центрального разведывательного управления (ЦРУ) США Джоном Рэтклиффом, сообщили Reuters два осведомленных источника. По их данным, встреча состоялась в понедельник, 21 сентября, в аэропорту Шеннон во время дозаправки самолетов. Подробности разговора собеседники агентства не привели. После этого Зеленский прибыл в Нью-Йорк, где 22 сентября у него запланированы переговоры с президентом США Дональдом Трампом.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/1f/2026-08-26T144005Z_414868830_RC2O7KAOIZKD_RTRMADP_3_USA-RUSSIA-CIA-KREMLIN.JPG"
+    },
+    {
+      "title": "Российская криптосхема отмыла $7 миллиардов через западные банки с помощью подставных фирм",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/46-5-a206642",
+      "dt": "2026-09-22T09:19:00+00:00",
+      "summary": "Западные санкции отключили Россию от международной системы банковский платежей SWIFT, но она смогла туда пролезть и провести операции на $6,9 млрд, в том числе в оплату товаров для военных и спецслужб. Как выяснила Financial Times из сотен тысяч файлов, полученных из A7 – криптокомпании, созданной беглым молдавским олигархом и банком российского ВПК, для операций через Standard Chartered, Citigroup, Deutsche Bank и другие международные банки использовалась добрая старая схема по отмыванию денег.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/54/pexels-rdne-8370752-4.jpg"
+    },
+    {
+      "title": "США, Гренландия и Дания заключат соглашение о военных базах",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/update-1-eksklyuziv-ssha-grenlandiya-i-daniya-zaklyuchat-soglashenie-o-voennykh-bazakh-a206649",
+      "dt": "2026-09-22T09:35:22+00:00",
+      "summary": "(Обновлен заголовок, добавлены подробности)",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/c2/206649__c2e53317ee0010453894dda78c20bf26.jpg"
+    },
+    {
+      "title": "Россияне вопреки блокировкам стали на четверть больше смотреть YouTube",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rossiyane-vopreki-blokirovkam-stali-nachetvert-bolshe-smotret-youtube-a206640",
+      "dt": "2026-09-22T09:38:00+00:00",
+      "summary": "В первом полугодии 2026 года россияне стали проводить на заблокированном YouTube на 24% больше времени — в среднем по 99 минут в день на пользователя, пишет «Коммерсантъ» со ссылкой на исследование Future Lab. При этом показатель отечественного конкурента американского видеохостинга — Rutube — с учетом встроенных просмотров сократился на 4,7%, до 41 минуты в день. «VK Видео» в исследование не вошло, однако в холдинге заявили, что время просмотра отдельного приложения выросло на 65% и приблизилос",
+      "image": "https://ru.themoscowtimes.com/image/article_640/22/rashidul-islam-IQfzxoMOYgs-unsplash.jpg"
+    },
+    {
+      "title": "Экспорт нефти из Новороссийска вырос на 50% в сентябре к августу--источники, данные LSEG",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/eksport-nefti-iz-novorossiyska-vyros-na-50-v-sentyabre-k-avgustu-istochniki-dannye-lseg-a206647",
+      "dt": "2026-09-22T09:38:13+00:00",
+      "summary": "22 сен (Рейтер) - Экспорт и транзит нефти через российский порт Новороссийск 1-20 сентября вырос на 50% к августу, показали данные в терминале ‌LSEG, трейдеров и оценки Рейтер, приблизившись к нормальным показателям перевалки терминала.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/81/206647__81443dd1c8a5a2f76e96c7519b13146c.jpg"
+    },
+    {
+      "title": "Полицейские и налоговики начали обход квартир в Москве, чтобы найти сдающих жилье в аренду",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/politseiskie-i-nalogoviki-nachali-obhod-kvartir-v-moskve-chtobi-naiti-sdayuschih-zhile-v-arendu-a206645",
+      "dt": "2026-09-22T09:40:30+00:00",
+      "summary": "На фоне дефицита бюджета власти Москвы начали искать состоятельных граждан, которые платят мало налогов, пишет РБК. Они выявили 154 тыс. трудоспособных жителей без официальных доходов, владеющих большим количеством недвижимости и транспорта. Власти столицы уже оценивают возможный доход от их имущества и передают данные в Федеральную налоговую службу (ФНС), рассказала замглавы департамента экономической политики и развития Москвы Дарья Мурченко. «Речь идет о людях, которые имеют 50 квартир, 70 тр",
+      "image": "https://ru.themoscowtimes.com/image/article_640/83/665267.jpg"
+    },
+    {
+      "title": "Цены на газ в Европе продолжают спад после распродажи",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/tseny-na-gaz-v-evrope-prodolzhayut-spad-posle-rasprodazhi-a206651",
+      "dt": "2026-09-22T09:43:50+00:00",
+      "summary": "ОСЛО, 22 сен (Рейтер) - Оптовые цены на газ в Нидерландах и Великобритании снижаются во вторник, и трейдеры следят после падения днем ранее, поскольку рынок следит за развитием событий на дипломатическом фронте, ‌особенно на Генеральной Ассамблее ООН, которые способствовали бы открытию Ормузского пролива.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/be/206651__be56d9cdb79e8df6b91f0b3f31c45010.jpg"
+    },
+    {
+      "title": "Индия готовится вдвое сократить закупки российской нефти из-за «адских санкций» США",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/indiya-gotovitsya-vdvoe-sokratit-zakupki-rossiiskoi-nefti-iz-za-adskih-sanktsii-ssha-a206652",
+      "dt": "2026-09-22T09:50:20+00:00",
+      "summary": "Индийские НПЗ могут практически вдвое сократить долю российской нефти в импорте из-за закона об «адских санкциях», который на прошлой неделе подписал президент США Дональд Трамп, сообщили Bloomberg знакомые с вопросом источники.С этом году доля российских баррелей на индийском рынке достигала 40%, а в отдельные месяцы — в июне и июле — превышала 50% из-за блокады Ормузского пролива, парализовавшего нефтяные поставки с Ближнего Востока.Из-за «закона Грэма», позволяющего Дональду Трампу вводить по",
+      "image": "https://ru.themoscowtimes.com/image/article_640/0e/putin-modi-2102379827-23y78923ghj.jpeg"
+    },
+    {
+      "title": "Госзакупки зерна в РФ пройдут в 26-27гг, объем - 3 млн т -- ИФ",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/goszakupki-zerna-v-rf-proydut-v-26-27gg-obem-3-mln-t-if-a206654",
+      "dt": "2026-09-22T10:17:52+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Госзакупки зерна в РФ будут проводиться в 2026-2027 годах, их объем составит ‌3 миллиона тонн, сообщил Интерфакс со ссылкой на протокол Минсельхоза по отбору банка для финансирование госзакупок.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/7e/206654__7eef794f162b41f9c05d6384d85f4a83.jpg"
+    },
+    {
+      "title": "Министерство образования усложнит поступление в вузы после требования Путина отправить молодежь на заводы",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/ministerstvo-obrazovaniya-uslozhnit-postuplenie-v-vuzi-posle-trebovaniya-putina-otpravit-molodezh-na-zavodi-a206646",
+      "dt": "2026-09-22T10:31:00+00:00",
+      "summary": "Российские власти усложнят поступление выпускников в университеты, пишет РБК. Минобрнауки представило новые правила приема в российские вузы, которые могут вступить в силу со следующего учебного года. Ведомство предлагает изменить условия поступления для олимпиадников, увеличить перечень обязательных предметов ЕГЭ для ряда специальностей и отказаться от многопрофильного конкурса. Проект опубликован на портале нормативных правовых актов.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/f4/1530227.jpg"
+    },
+    {
+      "title": "Реальная явка на выборах в Госдуму, по мнению экспертов, была около 40%. ЦИК заявлял о явке 59%",
+      "link": "https://meduza.io/news/2026/09/22/realnaya-yavka-na-vyborah-v-gosdumu-po-mneniyu-ekspertov-byla-okolo-40-tsik-zayavlyal-o-yavke-59",
+      "dt": "2026-09-22T10:31:38+00:00",
+      "summary": "Явка на выборах в Госдуму, прошедших в России 18-20 сентября, была около 40%. Так, сообщает «Дождь», считают математик Борис Овчинников и эксперт по наблюдению за выборами Роман Удот. ЦИК объявлял о явке более 59%.",
+      "image": "https://meduza.io/imgly/share/1790077025/news/2026/09/22/realnaya-yavka-na-vyborah-v-gosdumu-po-mneniyu-ekspertov-byla-okolo-40-tsik-zayavlyal-o-yavke-59"
+    },
+    {
+      "title": "Золото дешевеет на фоне роста нефти, ястребиных комментариев ФРС",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/precious-zoloto-desheveet-na-fone-rosta-nefti-yastrebinykh-kommentariev-frs-a206657",
+      "dt": "2026-09-22T10:36:45+00:00",
+      "summary": "22 сен (Рейтер) - Цены на золото идут вниз во вторник, поскольку небольшой подъем цен на нефть и ястребиные высказывания руководителей Федрезерва укрепили ожидания рынка, что процентные ставки будут ‌находиться на высоком уровне дольше.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/84/206657__84f73621f62ae0387de40c24619b7b23.jpg"
+    },
+    {
+      "title": "Банки заняли у ЦБР на недельном аукционе репо 6 трлн р при спросе 7,7 трлн р",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/banki-zanyali-u-tsbr-na-nedelnom-auktsione-repo-6-trln-r-pri-sprose-77-trln-r-a206659",
+      "dt": "2026-09-22T10:42:19+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Ниже следует информация Центробанка ‌о результатах аукциона репо сроком на ​одну ​неделю, ​проведенного Банком ⁠России американским ‌способом, в ‌сравнении с предыдущими аукционами на ​тот ‌же срок: 22 сентября 15 ​сентября 8 сентября 1 сентября 25 ‌августа Лимит аукциона репо, млн р 6.000.000,0 5.360.000,0 4.480.000,0 5.310.000,0 4.370.000,0 Объем спроса, ​млн ​р 7.653.941,8 6.454.451,3 6.412.634,7 7.053.055,0 6.473.740,6 Объем ‌сделок, млн р 6.000.000,0 5.360,000,0 4.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/86/206659__868ae66bc209b8ed9c518a8ce88e3d1d.jpg"
+    },
+    {
+      "title": "Погиб отправившийся на войну после обвинения в получении взятки экс-мэр Белгорода",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/pogib-otpravivshiisya-na-voinu-posle-obvineniya-v-poluchenii-vzyatki-eks-mer-belgoroda-a206655",
+      "dt": "2026-09-22T10:44:00+00:00",
+      "summary": "Бывший мэр Белгорода и заместитель губернатора Белгородской области Константин Полежаев погиб на войне в Украине, сообщили близкие экс-чиновника изданию «Фонарь» и «Коммерсанту». Они не уточнили место и обстоятельства гибели 54-летнего Полежаева. Официально власти эту информацию пока не подтвердили. Полежаев работал мэром Белгорода с 2015 по 2019 год, а затем занимал пост замгубернатора Белгородской области по вопросам жилищно-коммунального хозяйства (ЖКХ). В частности, он отвечал за восстановле",
+      "image": "https://ru.themoscowtimes.com/image/article_640/14/1882062498_0-133-1280-853_1920x0_80_0_0_31d3756149406de67a6f6b8ead7c342e.jpg"
+    },
+    {
+      "title": "«Красный Крест» заявил, что получает в месяц 10 000 заявлений о пропаже людей в Украине",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/krasnii-krest-zayavil-chto-poluchaet-vmesyats-10-000-zayavlenii-opropazhe-lyudei-vukraine-a206650",
+      "dt": "2026-09-22T10:48:00+00:00",
+      "summary": "На войне России с Украиной пропали без вести 275 000 человек, сообщила «Ведомостям» президент международного комитета «Красного Креста» (МККК) Мирьяна Сполярич-Эггер. По ее словам, организация ежемесячно получает примерно по 10 000 новых заявок на розыск бесследно исчезнувших на фронте.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/ee/28-1200x800.jpg"
+    },
+    {
+      "title": "В Стерлитамаке — пожар в торговом центре. Есть погибшие. Люди выпрыгивали из окон, спасаясь от огня",
+      "link": "https://meduza.io/news/2026/09/22/v-sterlitamake-pozhar-v-torgovom-tsentre-est-pogibshie-lyudi-vyprygivali-iz-okon-spasayas-ot-ognya",
+      "dt": "2026-09-22T10:56:41+00:00",
+      "summary": "В Стерлитамаке произошел пожар на популярном среди местных жителей рынке — ТСК «Солнечный», сообщает Ufa1.ru.",
+      "image": "https://meduza.io/imgly/share/1790090195/news/2026/09/22/v-sterlitamake-pozhar-v-torgovom-tsentre-est-pogibshie-lyudi-vyprygivali-iz-okon-spasayas-ot-ognya"
+    },
+    {
+      "title": "Один и тот же многоквартирный дом в Подмосковье дважды получил повреждения во время атак Украины. Фотографии",
+      "link": "https://meduza.io/feature/2026/09/22/dron-popal-v-odin-i-tot-zhe-mnogokvartirnyy-dom-v-podmoskovie-uzhe-vtoroy-raz-fotografii",
+      "dt": "2026-09-22T11:04:09+00:00",
+      "summary": "В Московской области в городе Котельники есть высотка, которая уже дважды получала повреждения во время атак Украины. ЖК «Русич» в квартале Новые Котельники получил повреждения в результате массированной атаки на московский регион 18 июня и почти ровно через три месяца — 20 сентября 2026 года (судя по видео, из-за ракет российских сил ПВО). На юго-востоке Москвы, в Капотне, с которой граничат Котельники, находится нефтеперерабатывающий завод — он регулярно становится объектом атак украинских дро",
+      "image": "https://meduza.io/image/attachments/images/012/773/766/small/B1r6JZ3LmOmxfcHGa0qvyg"
+    },
+    {
+      "title": "Парламент Литвы поддержал отказ от запрета на размещение в стране ядерного оружия",
+      "link": "https://meduza.io/news/2026/09/22/parlament-litvy-podderzhal-otkaz-ot-zapreta-na-razmeschenie-v-strane-yadernogo-oruzhiya",
+      "dt": "2026-09-22T11:15:28+00:00",
+      "summary": "Парламент Литвы поддержал законопроект, исключающий из Конституции статью о запрете на размещение на территории страны ядерного оружия. «За», как сообщает LRT, проголосовали 99 депутатов, «против» — 13, а пять воздержались.",
+      "image": "https://meduza.io/imgly/share/1790075728/news/2026/09/22/parlament-litvy-podderzhal-otkaz-ot-zapreta-na-razmeschenie-v-strane-yadernogo-oruzhiya"
+    },
+    {
+      "title": "Эрдоган призвал отменить право вето в Совете безопасности ООН и отказаться от постоянного членства",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/erdogan-prizval-otmenit-pravo-veto-v-sovete-bezopasnosti-oon-i-otkazatsya-ot-postoyannogo-chlenstva-a206660",
+      "dt": "2026-09-22T11:29:36+00:00",
+      "summary": "Перед началом ежегодной сессии Генеральной ассамблеи ООН в Нью-Йорке президент Турции Реджеп Тайип Эрдоган призвал радикально реформировать руководящие органы глобальной организации. Совет безопасности по-прежнему отражает структуру, сложившуюся после Второй мировой войны, указывает Эрдоган в колонке, вышедшей на Bloomberg: «Крайне необходимо применить более эффективный, справедливый и подотчетный подход к вопросу представительства». При реализации предлагаемых изменений нынешняя Россия лишится ",
+      "image": "https://ru.themoscowtimes.com/image/article_640/69/2026-09-22-Abd-Etkinlik.jpg"
+    },
+    {
+      "title": "Доходность госбондов в ЕС снижается после намека Ирана на открытие Ормузского пролива",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/dokhodnost-gosbondov-v-es-snizhaetsya-posle-nameka-irana-na-otkrytieormuzskogo-proliva-a206666",
+      "dt": "2026-09-22T11:30:41+00:00",
+      "summary": "ЛОНДОН, 22 сен (Рейтер) - Доходность облигаций еврозоный опускается второй день кряду во вторник, достигнув самого низкого почти за две ‌недели уровня после того, как Иран допустил возможность открытия Ормузского пролива в случае ослабления военного давления со стороны США, ​что привело к снижению ​цен ​на нефть.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/81/206666__81bb928ad00bf4603533391855042804.jpg"
+    },
+    {
+      "title": "Акции, валюты EM растут: рынки следят за переговорами в кулуарах ООН",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/emerging-markets-aktsii-valyuty-em-rastut-rynki-sledyat-za-peregovorami-v-kuluarakh-oon-a206665",
+      "dt": "2026-09-22T11:36:31+00:00",
+      "summary": "22 сен (Рейтер) - Акции развивающихся рынков поднялись во вторник до максимума почти двух недель благодаря росту азиатских фондовых бирж. Валюты также укрепляются, и инвесторы ждут вестей из Нью-Йорка, где ‌президент США Дональд Трамп проводит ряд встреч с мировыми лидерами.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/e1/206665__e1ae4f642bd33c84a29b48e04029c7c3.jpg"
+    },
+    {
+      "title": "В Томской области ограничили проведение массовых мероприятий из-за нападения медведей",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/v-tomskoi-oblasti-ogranichili-provedenie-massovih-meropriyatii-iz-za-napadeniya-medvedei-a206664",
+      "dt": "2026-09-22T11:39:00+00:00",
+      "summary": "В Томской области вводятся ограничения на проведение массовых мероприятий, экскурсий и туристических слётов за пределами и на окраинах населённых пунктов из-за выхода медведей к людям, сообщил губернатор региона Владимир Мазур. По его словам, ограничения будут действовать «минимум до 1 ноября». Следить за их соблюдением должны главы городов и районов.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/a8/pexels-alena-maruk-106558942-146558651.jpg"
+    },
+    {
+      "title": "Рубль перешел к коррекции в ожидании новых сигналов",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rubl-pereshel-k-korrektsii-v-ozhidanii-novykh-signalov-a206668",
+      "dt": "2026-09-22T11:58:33+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Рубль немного снизился во вторник вслед за ценами на нефть, и в ожидании возобновления смягчения денежно-кредитной политики в РФ после анонса бюджета с приемлемыми уровнями дефицита.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/32/206668__32c345dae438129e83044a83a74accec.jpg"
+    },
+    {
+      "title": "Инфляционные ожидания населения РФ в сен подскочили до 14,2% -- опрос по заказу ЦБР",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/inflyatsionnye-ozhidaniya-naseleniya-rf-v-sen-podskochili-do-142-opros-po-zakazu-tsbr-a206669",
+      "dt": "2026-09-22T12:02:12+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Инфляционные ожидания населения РФ ‌в сентябре выросли до ​14,2% с 13,7% ​месяцем ранее, ​сообщил Центробанк ⁠данные ‌последнего опроса.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/b6/206669__b6dc7e6bfa4aaef81e8a0626940058cb.jpg"
+    },
+    {
+      "title": "В Армении после сделки с Трампом запустили один из крупнейших в Европе дата-центров для ИИ",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/v-armenii-blagodarya-sdelke-s-trampom-zapustili-odin-iz-krupneishih-v-evrope-data-tsentrov-dlya-ii-a206661",
+      "dt": "2026-09-22T12:04:45+00:00",
+      "summary": "Армения рассчитывает стать одним из крупнейших центров инфраструктуры искусственного интеллекта в Европе, пишет Bloomberg. В августе стартап с армянскими корнями Firebird запустил ИИ-дата-центр в 45 км от Еревана. Его мощность к концу 2027 года должна достичь 300 мегаватт, а количество новейших чипов Nvidia должно превысить 70 000. Основные мощности предназначены для иностранных компаний, в том числе американской Perplexity AI. Пятая часть вычислительных мощностей зарезервирована для местных про",
+      "image": "https://ru.themoscowtimes.com/image/article_640/7c/105562846_0-87-1670-1026_1920x0_80_0_0_1b5a5c2eeca155834bf2f106670aa98e.jpg"
+    },
+    {
+      "title": "Парламент Литвы одобрил отмену запрета на размещение ядерного оружия",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/parlament-litvi-odobril-otmenu-zapreta-narazmeschenie-yadernogo-oruzhiya-a206658",
+      "dt": "2026-09-22T12:05:00+00:00",
+      "summary": "Сейм Литвы одобрил отмену конституционного запрета на размещение оружия массового уничтожения, в том числе ядерного, а также иностранных военных баз, передает LRT. За выступили 99 депутатов, 13 высказались против, еще пять воздержались. Чтобы принять поправку к Конституции, потребуется еще два голосования. Первое запланировано на 6 октября, а окончательное — на 12 января 2027-го. Необходимо, чтобы инициативу поддержали не менее 94 депутатов из 141.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/e0/55543636771_efe7cd99c6_k.jpg"
+    },
+    {
+      "title": "Война. 1672-й день. Украина и Россия продолжают атаковать энергетические объекты друг друга. Трамп и Зеленский лично обсудят отказ от таких ударов",
+      "link": "https://meduza.io/feature/2026/09/22/voyna",
+      "dt": "2026-09-22T12:05:24+00:00",
+      "summary": "«Медуза» с 24 февраля 2022 года в прямом эфире рассказывает о российско-украинской войне. Мы ежедневно публикуем ваши письма, потому что уверены: о войне нужно продолжать говорить. Поделитесь с нами мыслями о войне. Какие чувства вы испытываете? Как война влияет на вашу жизнь и ваше отношение к миру? Если у вас есть история, связанная с войной, — расскажите ее. Форма для обратной связи — в конце этой статьи. Обзор предыдущего дня можно прочитать здесь.",
+      "image": "https://meduza.io/image/attachments/images/012/774/067/small/mHOWgYSYPWQIbXdf_kslGw"
+    },
+    {
+      "title": "С.Аравия возобновила прокачку по нефтепроводу Восток-Запад -- источники",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/saraviya-vozobnovila-prokachku-po-nefteprovodu-vostok-zapad-istochniki-a206670",
+      "dt": "2026-09-22T12:16:56+00:00",
+      "summary": "СИНГАПУР/НОВЫЙ ДЕЛИ, 22 сен (Рейтер) - Саудовская Аравия вновь запустила нефтепровод Восток-Запад, закрытый после ударов БПЛА ‌13 сентября, и может возобновить экспорт нефти из порта Янбу на Красном ​море во ​вторник, ​сообщили три ⁠источника, знакомые с ситуацией.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/4d/206670__4da471c1425c9036b136a2e2bf67d4bf.jpg"
+    },
+    {
+      "title": "Казахстан значительно сократил список предприятий для импорта пшеницы из РФ",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/kazakhstan-znachitelno-sokratil-spisok-predpriyatiy-dlya-importa-pshenitsy-iz-rf-a206673",
+      "dt": "2026-09-22T12:20:16+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Казахстан значительно сократил список предприятий, которые могут импортировать российскую пшеницу, сообщил глава комитета аналитики Зернового ‌союза Казахстана Евгений Карабанов.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/f4/206673__f4f321867939a2d586b86b8e32051426.jpg"
+    },
+    {
+      "title": "ЦБ Венгрии сохранил ставку на уровне 5,5%, как и ожидалось",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/tsb-vengrii-sokhranil-stavku-na-urovne-55-kak-i-ozhidalos-a206672",
+      "dt": "2026-09-22T12:20:30+00:00",
+      "summary": "БУДАПЕШТ, 22 сен (Рейтер) - Центральный банк ‌Венгрии во вторник сохранил ​ключевую ставку ​на ​уровне ⁠5,5%, ‌как и ожидалось.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/d1/206672__d175eeb42e10f666b53d627660450288.jpg"
+    },
+    {
+      "title": "Фьючерсы на Dow, S&P в плюсе, в центре внимания - конфликт на Б.Востоке",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/us-stocks-fyuchersy-na-dow-sp-v-plyuse-v-tsentre-vnimaniya-konflikt-na-bvostoke-a206671",
+      "dt": "2026-09-22T12:27:40+00:00",
+      "summary": "22 сен (Рейтер) - Фьючерсы на основные индексы Уолл-стрит ‌показывают умеренный рост во вторник, ​после значительного ралли ​фондового ​рынка накануне, ⁠который ‌произошел благодаря подъему ‌сектора искусственного интеллекта. Инвесторы надеются ​на возможные ‌переговоры между ​США и Ираном, ‌которые могли бы положить конец длящемуся ​шесть ​месяцев ‌конфликту.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/60/206671__60984d7a738b38e0b5322e6f8b70c4d2.jpg"
+    },
+    {
+      "title": "Россия стала заманивать африканцев на войну в Украине под предлогом съемок в фильме",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rossiya-stala-zamanivat-afrikantsev-na-voinu-v-ukraine-pod-predlogom-semok-v-filme-a206663",
+      "dt": "2026-09-22T12:33:00+00:00",
+      "summary": "Россия не устает выдумывать способы для привлечения людей на кровавую войну, которую она ведет в Украине. Обманом, с обещаниями высоких заработков в мирных профессиях (в крайнем случае – в тыловых службах обеспечения войск), ей удалось заманить в страну и затем отправить на фронт уже тысячи людей из бедных стран Африки и Азии. Новацией в рекрутинговой кампании стало предложение участвовать в съемках фильма.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/ff/Screenshot-226-07-28-at-95914-AMcopy.jpg"
+    },
+    {
+      "title": "Иран готов открыть Ормузский пролив, если США снимут блокаду",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/iran-gotov-otkryt-ormuzskiy-proliv-esli-ssha-snimut-blokadu-a206674",
+      "dt": "2026-09-22T12:37:42+00:00",
+      "summary": "НЬЮ-ЙОРК, 22 сен (Рейтер) - Иран может открыть Ормузский пролив в течение ‌семи дней, если Соединенные Штаты ослабят военное давление и ​прекратят ​блокаду Ирана ​с моря, ⁠сообщил Рейтер во ‌вторник высокопоставленный ‌иранский чиновник.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/c5/206674__c55ba4bbd5a737d444a37e6e94f829f7.jpg"
+    },
+    {
+      "title": "Митрополит Иларион (в его автомобиле в Чехии нашли кокаин) подал в суд на «Дождь»",
+      "link": "https://meduza.io/news/2026/09/22/mitropolit-ilariona-v-ego-avtomobile-v-chehii-nashli-kokain-podal-v-sud-na-dozhd",
+      "dt": "2026-09-22T12:37:52+00:00",
+      "summary": "Митрополит Иларион (Григорий Алфеев) подал в суд в Москве иск к телеканалу «Дождь» о защите чести, достоинства и деловой репутации. Карточку дела обнаружил РБК.",
+      "image": "https://meduza.io/imgly/share/1790096525/news/2026/09/22/mitropolit-ilariona-v-ego-avtomobile-v-chehii-nashli-kokain-podal-v-sud-na-dozhd"
+    },
+    {
+      "title": "Рубио поддерживает идею энергетического перемирия между РФ и Украиной",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rubio-podderzhivaet-ideyu-energeticheskogo-peremiriya-mezhdu-rf-i-ukrainoy-a206677",
+      "dt": "2026-09-22T12:48:21+00:00",
+      "summary": "ВАШИНГТОН, 22 сен (Рейтер) - Госсекретарь США Марко Рубио сказал ‌в интервью, что президент США Дональд ​Трамп ​во время встречи ​в Нью-Йорке ⁠с ‌президентом Украины ‌Владимиром Зеленским во вторник обсудит ​вопрос об ‌энергетическом перемирии между Москвой ​и Киевом.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/d2/206677__d22467d7b052939ec88739d0268ae24b.jpg"
+    },
+    {
+      "title": "«Единая Россия» проиграла КПРФ и «Новым людям» на выборах в Госдуму в 40 странах",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/edinaya-rossiya-proigrala-kprf-i-novim-lyudyam-na-viborah-v-gosdumu-v-40-stranah-a206676",
+      "dt": "2026-09-22T12:56:00+00:00",
+      "summary": "«Единая Россия» проиграла «Новым людям» и КПРФ на выборах в Госдуму как минимум в 40 странах. В 39 из них на первом месте оказались «Новые люди». Это следует из данных Центральной избирательной комиссии (ЦИК), которые изучила «Верстка». Многие страны, в которых проиграла «Единая Россия», стали популярными направлениями для релокации у россиян после начала полномасштабного вторжения в Украину. В частности, это Армения, Казахстан, Черногория, Португалия, Испания, Сербия и Таиланд.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/92/2026-09-20T183643Z_1753874523_RC25NNAOHDS1_RTRMADP_3_RUSSIA-ELECTION.JPG"
+    },
+    {
+      "title": "Нефть теряет почти 2% с улучшением перспектив экспорта из Персидского залива",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/update-1-neft-teryaet-pochti-2-s-uluchsheniem-perspektiv-eksporta-iz-persidskogo-zaliva-a206679",
+      "dt": "2026-09-22T13:04:13+00:00",
+      "summary": "(Обновлен заголовок, котировки, добавлена цитата)",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/11/206679__11be3af40931ff45392d64a291ddb9ef.jpg"
+    },
+    {
+      "title": "Зачем на самом деле были нужны выборы в Госдуму? . Александр Баунов раскладывает главное политическое событие осени на составляющие",
+      "link": "https://meduza.io/feature/2026/09/22/zachem-na-samom-dele-byli-nuzhny-vybory-v-gosdumu",
+      "dt": "2026-09-22T13:22:04+00:00",
+      "summary": "У процедуры, которая регулярно происходит в России и принимает форму выборов, хотя ими не является, тем не менее есть свои, неэлекторальные смыслы. Это событие нарушает гладкую политическую поверхность автократии и уже этим привлекает внимание.",
+      "image": "https://meduza.io/image/attachments/images/012/774/301/small/KfdJ9Lm14KAwlQW8WOXTsA"
+    },
+    {
+      "title": "Сергей Миронов не появился на публике после выборов",
+      "link": "https://istories.media/news/2026/09/22/sergei-mironov-ne-poyavilsya-na-publike-posle-viborov/",
+      "dt": "2026-09-22T13:23:29+00:00",
+      "summary": "Ранее он пропал из публичного пространства и отрицал слухи о проблемах со здоровьем",
+      "image": null
+    },
+    {
+      "title": "Российские генералы снова отправили армию атаковать Украину по газовой трубе",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rossiiskie-generali-snova-otpravili-armiyu-atakovat-ukrainu-po-gazovoi-trube-a206680",
+      "dt": "2026-09-22T13:40:00+00:00",
+      "summary": "Российские войска предпринимают попытки проникнуть в северную часть Сумской области из Курской области по газопроводу Уренгой — Помары — Ужгород. За последнюю неделю российские военные как минимум дважды пытались использовать трубу для переброски групп в украинский тыл, сообщил в воскресенье, 20 сентября, представитель 8-го воздушно-десантного корпуса Украины. По данным Института изучения войны (ISW), одна из групп, участвовавших в операции, насчитывала около взвода. К использованию трубопровода",
+      "image": "https://ru.themoscowtimes.com/image/article_640/f1/812255413_1790196562323566_1847593231971478622_n.jpeg"
+    },
+    {
+      "title": "ФСБ усилила проверки на границе с Финляндией в Карелии",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/fsb-usilila-proverki-nagranitse-sfinlyandiei-vkarelii-a206675",
+      "dt": "2026-09-22T13:47:00+00:00",
+      "summary": "В Карелии ужесточили проверки на контрольном посту Шуя в 110 км от границы с Финляндией. Об этом сообщила администрация Суоярвского округа. Контроль движения осуществляется в обоих направлениях. Водителей предупредили о необходимости останавливаться по требованию сотрудников Погранслужбы ФСБ и иметь при себе документы. За нарушение предписания грозит штраф до 7 тыс. рублей либо арест на срок до 15 суток. Шлагбаумы на посту закрыты и поднимаются только после досмотра автомобилей.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/7e/astrapress_2026-09-22160832.jpeg"
+    },
+    {
+      "title": "Чехия выдворяет из страны россиян, снимавших в Европе для Z-канала «Рыбарь»",
+      "link": "https://meduza.io/news/2026/09/22/chehiya-vydvoryaet-iz-strany-rossiyan-snimavshih-v-evrope-dlya-z-kanala-rybar",
+      "dt": "2026-09-22T13:50:10+00:00",
+      "summary": "Чешская полиция задержала и допросила россиян Виталия Чащухина и Игоря Долматова, которых журналисты уличили в работе на близкий к Минобороны РФ телеграм-канал «Рыбарь». Им предписано покинуть страну в течение трех дней, сообщает Seznam Zprávy.",
+      "image": "https://meduza.io/imgly/share/1790087689/news/2026/09/22/chehiya-vydvoryaet-iz-strany-rossiyan-snimavshih-v-evrope-dlya-z-kanala-rybar"
+    },
+    {
+      "title": "Уолл-стрит открылась в плюсе, в фокусе - конфликт на Б.Востоке",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/us-stocks-uoll-strit-otkrylas-v-plyuse-v-fokuse-konflikt-na-bvostoke-a206682",
+      "dt": "2026-09-22T13:50:40+00:00",
+      "summary": "22 сен (Рейтер) - Основные фондовые индексы ‌Уолл-стрит начали сессию вторника подъемом, ​а Nasdaq ​достиг ​внутридневного рекордного ⁠пика ‌впервые с ‌начала июня. Инвесторы ждут, произойдут ​ли ‌переговоры между ​США и ‌Ираном, которые могут привести к урегулированию ​конфликта.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/dc/206682__dc84561d0a90aa3287b032f1ce734f02.jpg"
+    },
+    {
+      "title": "«Путину просто нравятся большие цифры. А много ли у него сейчас радостей?»",
+      "link": "https://istories.media/opinions/2026/09/22/putinu-prosto-nravyatsya-bolshie-tsifri-a-mnogo-li-u-nego-seichas-radostei/",
+      "dt": "2026-09-22T14:01:43+00:00",
+      "summary": "Стоит ли отчаиваться, глядя на итоги выборов",
+      "image": "https://static.istories.media/uploaded/images/09901d98e97845cb87a1426242936033-1920x960px_1x.webp"
+    },
+    {
+      "title": "Доллар стабилизировался на фоне снижения нефти после предложений Ирана открыть Ормуз",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/forex-dollar-stabilizirovalsya-na-fone-snizheniya-nefti-posle-predlozheniy-irana-otkryt-ormuz-a206685",
+      "dt": "2026-09-22T14:05:40+00:00",
+      "summary": "22 сен (Рейтер) - Доллар отметился на максимуме почти что двух месяцев на волатильных торгах во вторник и ‌в итоге стабилизировался на фоне новостей о предложении Тегерана открыть Ормузский пролив в течение семи дней ​при условии снятии американской ​морской ​блокады.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/aa/206685__aa1b6cde83e0ef8241c1aa318a574b10.jpg"
+    },
+    {
+      "title": "Доверие потребителей еврозоны снизилось в сен -- Еврокомиссия",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/doverie-potrebiteley-evrozony-snizilosv-sen-evrokomissiya-a206684",
+      "dt": "2026-09-22T14:09:37+00:00",
+      "summary": "22 сен (Рейтер) - Потребительские ‌настроения ​в ​еврозоне ухудшились в ​сентябре, ⁠показали ‌опубликованные ‌во вторник данные.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/03/206684__03b35f81c55904d9ff6106d0bf416112.jpg"
+    },
+    {
+      "title": "Чистая прибыль банков РФ в авг снизилась до 440 млрд р, за 8 мес они заработали 3,3 трлн р - ЦБР",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/chistaya-pribyl-bankov-rf-v-avg-snizilas-do-440-mlrd-r-za-8-mes-oni-zarabotali-33-trln-r-tsbr-a206695",
+      "dt": "2026-09-22T14:10:22+00:00",
+      "summary": "МОСКВА, 22 сен (Рейтер) - Чистая прибыль банковского сектора РФ в августе снизилась на 0,7% к предыдущему месяцу до 440 миллиардов рублей, а за восемь месяцев 2026 года банки заработали 3,3 триллиона ‌рублей, сообщил ЦБР в обзоре.",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/0b/206695__0b4b0932f85b147e9c52c42bda9b1762.jpg"
+    },
+    {
+      "title": "Россия впервые начала вывозить зерно через Северный ледовитый океан из-за блокады черноморских портов",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rossiya-vpervie-nachala-vivozit-zerno-cherez-severnii-ledovitii-okean-iz-za-blokadi-chernomorskih-portov-a206696",
+      "dt": "2026-09-22T14:20:08+00:00",
+      "summary": "Российские экспортеры впервые используют Арктику, чтобы доставь покупателям зерно, которое прежде вывозилось за рубеж через порты Черного моря.Мурманск, главный незамерзающий порт России за полярным кругом, который прежде использовался для экспорта угля, удобрений и леса, в октябре 2026 года впервые отгрузит партии зерна. Как сообщает Reuters со ссылкой на источники на рынке, первый груз в объеме 40 тысяч тонн из Ставрополья уже получил согласование со стороны РЖД, которой предстоит перевезти зе",
+      "image": "https://ru.themoscowtimes.com/image/article_640/6b/Antarctica-_Vladimir_Ignatyuk_the_Russian_Icebreaker_-a.jpg"
+    },
+    {
+      "title": "Более 18 из 30 млн «бумажных» голосов за «Единую Россию» могли быть сфальсифицированы",
+      "link": "https://istories.media/stories/2026/09/22/bolee-18-iz-30-mln-bumazhnikh-golosov-za-edinuyu-rossiyu-mogli-bit-sfalsifitsirovani/",
+      "dt": "2026-09-22T14:29:36+00:00",
+      "summary": "Реальный результат партии власти не превышает 35%. Главные итоги и аномалии выборов в Госдуму IX созыва",
+      "image": "https://static.istories.media/uploaded/images/5d1d7b51e25246b19a3b81ca3a7b0437-1920x960px_1x.webp"
+    },
+    {
+      "title": "Минздрав утвердил рекомендации по лечению «расстройств сексуального предпочтения»",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/minzdrav-utverdil-rekomendatsii-polecheniyu-rasstroistv-seksualnogo-predpochteniya-a206697",
+      "dt": "2026-09-22T14:30:00+00:00",
+      "summary": "Министерство здравоохранения РФ утвердило первые клинические рекомендации по лечению «расстройств сексуального предпочтения» (РСП). Документ, подготовленный Российским обществом психиатров, вводит ступенчатую систему терапии — от психотерапии и антидепрессантов до препаратов, снижающих уровень тестостерона. Рекомендации опубликованы на профильном портале Минздрава.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/36/pexels-pavel-danilyuk-6753467.jpg"
+    },
+    {
+      "title": "Nasdaq установил внутрисессионный рекорд благодаря акциям Alphabet",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/us-stocks-nasdaq-ustanovil-vnutrisessionnyy-rekord-blagodarya-aktsiyam-alphabet-a206698",
+      "dt": "2026-09-22T14:47:11+00:00",
+      "summary": "22 сен (Рейтер) - Американский фондовый индекс Nasdaq во вторник обновил исторический максимум благодаря сильному росту акций ‌Alphabet, создателя чатбота ИИ Gemini. Одновременно настроения на рынках улучшил оптимизм вокруг потенциальных переговоров между США ​и Ираном. Индекс ​Dow ​Jones к 17:⁠32 МСК снизился ‌на 0,44% до 51.‌821 пункта, индекс S&P 500 укрепился ​на 0,06% до 7.769,‌6 пункта, а Nasdaq вырос на ​0,52% до 27.261,68 пункта. Dow ‌Jones: Лидеры роста Изменение, % Sherwin-Williams Co ",
+      "image": "https://ru.themoscowtimes.com/image/reuters_og/53/206698__537f64280f96a25a055ddc1b47845682.jpg"
+    },
+    {
+      "title": "На американской военной базе в Германии разбился F-16",
+      "link": "https://meduza.io/news/2026/09/22/na-amerikanskoy-voennoy-baze-v-germanii-razbilsya-f-16",
+      "dt": "2026-09-22T14:52:06+00:00",
+      "summary": "На американской авиабазе Шпангдалем в регионе Айфель потерпел крушение военный истребитель F-16, сообщает SWR, ссылаясь на представителей базы.",
+      "image": "https://meduza.io/imgly/share/1790088726/news/2026/09/22/na-amerikanskoy-voennoy-baze-v-germanii-razbilsya-f-16"
+    },
+    {
+      "title": "В Калужской области и Забайкалье ввели ограничения на продажу бензина",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/vkaluzhskoi-oblasti-izabaikale-vveli-ogranicheniya-naprodazhu-benzina-a206683",
+      "dt": "2026-09-22T14:55:00+00:00",
+      "summary": "Все больше российских регионов вводят ограничения на продажу бензина из-за продолжающихся ударов Вооруженных сил Украины по нефтеперерабатывающим заводам. В граничащей с Москвой и Подмосковьем Калужской области с 23 сентября возвращают заправку по четным и нечетным дням в зависимости от первой цифры регистрационного номера автомобиля, сообщил губернатор Владислав Шапша. Кроме того, заливать бензин можно будет только в бак автомобиля. Он назвал причиной такого решения «локальные логистические сбо",
+      "image": "https://ru.themoscowtimes.com/image/article_640/da/1517019.jpg"
+    },
+    {
+      "title": "Жить в России — это международное преступление? И можно ли всех россиян привлечь к ответственности за войну? Всерьез анализируем одну из главных интернет-дискуссий недели",
+      "link": "https://meduza.io/cards/zhit-v-rossii-eto-mezhdunarodnoe-prestuplenie-i-mozhno-li-vseh-rossiyan-privlech-k-otvetstvennosti-za-voynu",
+      "dt": "2026-09-22T14:58:46+00:00",
+      "summary": "В соцсетях ожесточенно обсуждают выпуск The Breakfast Show с участием социолога Константина Гаазе. А в первую очередь — его утверждение о коллективной ответственности россиян из-за войны с Украиной.",
+      "image": "https://meduza.io/imgly/zen/1790090327/cards/zhit-v-rossii-eto-mezhdunarodnoe-prestuplenie-i-mozhno-li-vseh-rossiyan-privlech-k-otvetstvennosti-za-voynu"
+    },
+    {
+      "title": "ЕС согласен снять санкции с Алишера Усманова и Михаила Фридмана",
+      "link": "https://istories.media/news/2026/09/22/yes-soglasen-snyat-sanktsii-s-alishera-usmanova-i-mikhaila-fridmana/",
+      "dt": "2026-09-22T14:59:58+00:00",
+      "summary": "СМИ писали, что это результат шантажа Азербайджана, где два гражданина Франции отбывают долгие тюремные сроки",
+      "image": "https://static.istories.media/uploaded/images/0944729d7ab7499c874ec070825ceee0-1920x960px_1x.webp"
+    },
+    {
+      "title": "Верфь, где за 40 млн евро паркуется «яхта Путина», оказалась на грани банкротства",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/verf-gde-za-40-mln-evro-parkuetsya-yahta-putina-okazalas-na-grani-bankrotstva-a206681",
+      "dt": "2026-09-22T15:01:00+00:00",
+      "summary": "Итальянская The Italian Sea Group (TISG), которая четыре года обслуживает и модернизирует замороженную в Италии «яхту Путина» — «Шахерезаду», оказалась на грани банкротства и срочно ищет деньги для выживания. У компании также истек контракт на ремонт и стоянку 140-метрового судна.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/d6/2AE3HOO4KFM55KATDDPTAGKUTM.jpg"
+    },
+    {
+      "title": "Турция начала разрывать авиационные и банковские связи с Ираном из-за санкций США",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/turtsiya-nachala-razrivat-aviatsionnie-i-bankovskie-svyazi-s-iranom-iz-za-sanktsii-ssha-a206699",
+      "dt": "2026-09-22T15:23:33+00:00",
+      "summary": "Введенные США санкции против иранской авиационной отрасли заставили Турцию отказаться от собственных рейсов в Иран и запретить полеты одной из его авиакомпаний. Кроме того, под удар попали сотрудничающие с Ираном банки. На фоне ужесточения американской экономической блокады Тегеран сообщил о готовности вновь разрешить судоходство в Ормузском проливе в случае ее снятия и смягчения военного давления со стороны Вашингтона.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/4f/AFP__20250123__36VM3G3__v2__MidRes__SyriaTurkeyConflictDiplomacy.jpg"
+    },
+    {
+      "title": "Евросоюз решил снять санкции с российских бизнесменов Алишера Усманова и Михаила Фридмана. Ограничения в отношении остальных трех тысяч человек и компаний продлили сразу на три года",
+      "link": "https://meduza.io/feature/2026/09/22/evrosoyuz-reshil-snyat-sanktsii-s-rossiyskih-biznesmenov-alishera-usmanova-i-mihaila-fridmana",
+      "dt": "2026-09-22T15:32:08+00:00",
+      "summary": "Постоянные представители стран Евросоюза договорились исключить из санкционного списка двух российских миллиардеров — основателя USM Holdings Алишера Усманова и сооснователя «Альфа-групп» Михаила Фридмана, сообщают Reuters и Euronews.",
+      "image": "https://meduza.io/image/attachments/images/012/775/715/small/TqKhs5hpQlxbCCFjRMjZYA"
+    },
+    {
+      "title": "Росстат зафиксировал самый резкий за 24 года рост цен на «мясо для бедных»",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/rosstat-zafiksiroval-samii-rezkii-za24-goda-rost-tsen-namyaso-dlya-bednih-a206700",
+      "dt": "2026-09-22T15:58:04+00:00",
+      "summary": "Курятина — наиболее доступный из видов мяса, составляющий основу потребления белка все большего числа российских потребителей, — стремительно дорожает с начала лета, следует из данных Росстата.За июнь рост цен на «куры охлажденные мороженые» составил 4,13% (по отношению к маю). А в июле разогнался до 7,87% за месяц, что стало рекордом за 24 года доступной статистики Росстата. В августе темпы подорожания курятины замедлились до 2,18% за месяц. Тем не менее, в годовом выражении рост цен достиг 16,",
+      "image": "https://ru.themoscowtimes.com/image/article_640/8b/meat-chicken-food2349729.jpg"
+    },
+    {
+      "title": "«Это полнейший позор». ЕС под давлением Франции и Люксембурга снял санкции с Усманова и Фридмана",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/es-snyal-sanktsii-s-milliarderov-fridmana-i-usmanova-a206701",
+      "dt": "2026-09-22T15:59:00+00:00",
+      "summary": "Страны ЕС договорились исключить миллиардеров Алишера Усманова и Михаила Фридмана из санкционного списка, одновременно продлив на три года ограничения против остальных почти 3000 связанных с Россией физических и юридических лиц, сообщили Reuters дипломаты ЕС. Решение стало результатом давления Франции и Люксембурга.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/01/lsdow9dw8d7qw7dqu-2.jpg"
+    },
+    {
+      "title": "«Единая Россия» проиграла на нескольких избирательных участках в Кольчугине",
+      "link": "https://istories.media/news/2026/09/22/edinaya-rossiya-proigrala-na-neskolkikh-izbiratelnikh-uchastkakh-v-kolchugine/",
+      "dt": "2026-09-22T16:45:20+00:00",
+      "summary": "В конце 2025 года местные жители протестовали против закрытия единственного роддома в городе",
+      "image": null
+    },
+    {
+      "title": "В Петербурге и других городах России подали заявки на митинги против фальсификаций на выборах",
+      "link": "https://meduza.io/news/2026/09/22/v-peterburge-i-drugih-gorodah-rossii-podali-zayavki-na-mitingi-protiv-falsifikatsiy-na-vyborah",
+      "dt": "2026-09-22T16:55:02+00:00",
+      "summary": "Активисты в Петербурге, Перми, Ижевске и Казани уведомили власти о том, что они намерены организовать митинги против фальсификаций на прошедших выборах в Госдуму.",
+      "image": "https://meduza.io/imgly/share/1790096102/news/2026/09/22/v-peterburge-i-drugih-gorodah-rossii-podali-zayavki-na-mitingi-protiv-falsifikatsiy-na-vyborah"
+    },
+    {
+      "title": "«Ситуация быстро ухудшается». Минфин предупредил, что дефицит бюджета-2026 вдвое превысит план",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/situatsiya-bistro-uhudshaetsya-minfin-predupredil-chto-defitsit-byudzheta-2026-vdvoe-previsit-plan-a206703",
+      "dt": "2026-09-22T16:56:59+00:00",
+      "summary": "Дефицит федерального бюджета в 2026 году третий год существенно превысит изначальные планы.По итогам года разрыв между доходами правительства и расходами достигнет 3% ВВП, сообщил в среду министр финансов Антон Силуанов в интервью телеканалу «Россия».«В ходе исполнения бюджета возникли дополнительные потребности в финансировании, в расходах. И для этого предусмотрены будут и дополнительные источники финансирования этих расходов. Мы ожидаем, что дефицит будет больше, чем запланировали», — сказал ",
+      "image": "https://ru.themoscowtimes.com/image/article_640/e8/Anton_Siluanov_7_May_2013.jpeg"
+    },
+    {
+      "title": "ЦБ зафиксировал самый большой отток вкладов из банков со времен мобилизации",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/tsb-zafiksiroval-samii-bolshoi-ottok-vkladov-iz-bankov-so-vremen-mobilizatsii-a206702",
+      "dt": "2026-09-22T16:57:19+00:00",
+      "summary": "Средства россиян в банках за август уменьшились на 107 млрд руб., или 0,2%, сообщил ЦБ. Это, по его мнению, «может быть связано с характерными для данного месяца тратами на отпуск и подготовку к учебному году». Летом прирост остатков на счетах физлиц традиционно замедляется, но в прошлом августе они прибавили 70 млрд руб., следует из данных регулятора.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/6e/2999452.jpg"
+    },
+    {
+      "title": "Саудовская Аравия возобновила работу нефтепровода «Восток — Запад», остановленную из-за атак дронов",
+      "link": "https://ru.themoscowtimes.com/2026/09/22/saudovskaya-araviya-vozobnovila-rabotu-nefteprovoda-vostok-zapad-ostanovlennuyu-iz-za-atak-dronov-a206704",
+      "dt": "2026-09-22T17:02:00+00:00",
+      "summary": "Саудовская Аравия возобновила работу нефтепровода «Восток — Запад», остановленного 11 сентября после атак беспилотников, и уже в ближайшее время может возобновить экспорт нефти из порта Янбу на Красном море. Об этом Reuters сообщили три источника, знакомые с ситуацией. После перезапуска трубопровод пока работает на низкой скорости, а выход на прежний объем перекачки может занять несколько недель, пишет агентство.",
+      "image": "https://ru.themoscowtimes.com/image/article_640/c2/khurais-web211-2.jpg"
     }
   ]
 }
