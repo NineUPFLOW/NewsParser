@@ -1,6 +1,9 @@
 """
 Telegram-бот для скачивания видео через yt-dlp.
-Работает на GitHub Actions.
+Работает на GitHub Actions без cookies.
+
+Для YouTube пробует 5 разных player_client по очереди —
+иногда один из них обходит bot-check без авторизации.
 """
 
 import asyncio
@@ -82,73 +85,100 @@ def _human_size(size: int) -> str:
 
 async def download_media(url: str) -> tuple[Path | None, str]:
     """
-    Скачивает видео/аудио через yt-dlp.
+    Пытается скачать через разные player_client, пока один не сработает.
     Возвращает (file_path, error_text). При успехе error_text пустой.
     """
     _clean_dir()
-    output_template = str(DOWNLOAD_DIR / "%(title).100s.%(ext)s")
 
-    cmd = [
-        "yt-dlp",
-        "--no-playlist",
-        "--max-filesize", "50M",
-        "--format", "bestvideo[ext=mp4][filesize<50M]+bestaudio[ext=m4a]/best[ext=mp4][filesize<50M]/best[filesize<50M]",
-        "--merge-output-format", "mp4",
-        "--js-runtimes", "deno",
-        "--no-warnings",
-        "--no-progress",
-        "-o", output_template,
+    strategies = [
+        {
+            "name": "tv_embedded",
+            "args": ["--extractor-args", "youtube:player_client=tv_embedded"],
+        },
+        {
+            "name": "ios",
+            "args": ["--extractor-args", "youtube:player_client=ios"],
+        },
+        {
+            "name": "android",
+            "args": ["--extractor-args", "youtube:player_client=android"],
+        },
+        {
+            "name": "web_embedded",
+            "args": ["--extractor-args", "youtube:player_client=web_embedded"],
+        },
+        {
+            "name": "default",
+            "args": [],
+        },
     ]
 
-    if Path(COOKIES_FILE).exists():
-        cmd.extend(["--cookies", COOKIES_FILE])
-        logger.info("Использую cookies")
-    else:
-        logger.warning("Файл cookies не найден: %s", COOKIES_FILE)
+    last_error = "Не удалось скачать"
 
-    cmd.append(url)
+    for strategy in strategies:
+        logger.info("Пробую стратегию: %s", strategy["name"])
 
-    logger.info("yt-dlp: %s", url)
+        output_template = str(DOWNLOAD_DIR / "%(title).100s.%(ext)s")
 
-    try:
-        proc = await asyncio.create_subprocess_exec(
-            *cmd,
-            stdout=asyncio.subprocess.PIPE,
-            stderr=asyncio.subprocess.PIPE,
-        )
+        cmd = [
+            "yt-dlp",
+            "--no-playlist",
+            "--max-filesize", "50M",
+            "--format", "best[ext=mp4][filesize<50M]/best[filesize<50M]",
+            "--js-runtimes", "deno",
+            "--no-warnings",
+            "--quiet",
+            "--no-progress",
+            "-o", output_template,
+        ]
+
+        if Path(COOKIES_FILE).exists():
+            cmd.extend(["--cookies", COOKIES_FILE])
+
+        cmd.extend(strategy["args"])
+        cmd.append(url)
+
         try:
-            _, stderr = await asyncio.wait_for(proc.communicate(), timeout=300)
-        except asyncio.TimeoutError:
-            proc.kill()
-            return None, "Таймаут скачивания"
+            proc = await asyncio.create_subprocess_exec(
+                *cmd,
+                stdout=asyncio.subprocess.PIPE,
+                stderr=asyncio.subprocess.PIPE,
+            )
+            try:
+                _, stderr = await asyncio.wait_for(proc.communicate(), timeout=180)
+            except asyncio.TimeoutError:
+                proc.kill()
+                last_error = "Таймаут скачивания"
+                continue
 
-        if proc.returncode != 0:
+            if proc.returncode == 0:
+                files = [
+                    f for f in DOWNLOAD_DIR.glob("*")
+                    if f.is_file() and not f.name.endswith((".part", ".ytdl"))
+                ]
+                if files:
+                    logger.info("✅ Сработала стратегия: %s", strategy["name"])
+                    return max(files, key=lambda f: f.stat().st_size), ""
+
             err = stderr.decode(errors="ignore")
-            logger.error("yt-dlp error: %s", err[:500])
+            logger.warning("Стратегия %s провалилась: %s", strategy["name"], err[:200])
 
             if "Sign in to confirm" in err:
-                return None, "YouTube требует авторизации (нужны cookies)"
-            if "Video unavailable" in err:
+                last_error = "YouTube блокирует бота (нужны cookies)"
+            elif "Video unavailable" in err:
                 return None, "Видео недоступно"
-            if "Private video" in err:
+            elif "Private video" in err:
                 return None, "Приватное видео"
-            if "File is larger than max-filesize" in err:
+            elif "File is larger than max-filesize" in err:
                 return None, "Файл больше 50 MB"
-            return None, "Не удалось скачать"
+            elif "This video is available to this channel" in err:
+                return None, "Видео ограничено"
 
-        files = [
-            f for f in DOWNLOAD_DIR.glob("*")
-            if f.is_file() and not f.name.endswith((".part", ".ytdl"))
-        ]
-        if not files:
-            return None, "Файл не найден после скачивания"
+        except Exception as e:
+            logger.error("Ошибка стратегии %s: %s", strategy["name"], e)
+            continue
 
-        return max(files, key=lambda f: f.stat().st_size), ""
-    except FileNotFoundError:
-        return None, "yt-dlp не установлен"
-    except Exception as e:
-        logger.error("Ошибка: %s", e)
-        return None, "Внутренняя ошибка"
+    return None, last_error
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -162,7 +192,8 @@ async def cmd_start(msg: Message):
         "Отправь ссылку на видео с:\n"
         "• YouTube, TikTok, Instagram, Twitter/X, Reddit\n"
         "• Vimeo, SoundCloud, Twitch, VK, Dailymotion\n\n"
-        "⚠️ Максимальный размер — 50 MB"
+        "⚠️ Максимальный размер — 50 MB\n"
+        "⚠️ YouTube может требовать авторизации"
     )
 
 
@@ -251,7 +282,6 @@ async def main():
     except Exception as e:
         logger.warning("delete_webhook: %s", e)
 
-    # Ограничиваем polling по времени
     async def stop_after_timeout():
         await asyncio.sleep(MAX_RUN_TIME)
         logger.info("⏰ Лимит времени — останавливаю polling")
