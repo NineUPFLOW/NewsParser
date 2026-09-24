@@ -1,6 +1,6 @@
 """
 Telegram-бот для скачивания видео через yt-dlp.
-Обходит блокировку YouTube через Deno (JS runtime) + cookies.
+Работает на GitHub Actions.
 """
 
 import asyncio
@@ -10,7 +10,9 @@ import shutil
 import time
 from pathlib import Path
 
-from aiogram import Bot
+from aiogram import Bot, Dispatcher, F
+from aiogram.client.default import DefaultBotProperties
+from aiogram.enums import ParseMode
 from aiogram.types import FSInputFile, Message
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -32,7 +34,6 @@ MAX_RUN_TIME = 5 * 3600
 DOWNLOAD_DIR = Path("/tmp/downloads")
 DOWNLOADS_DELAY = 3
 
-# Путь к cookies-файлу (добавляется в репозиторий или секреты)
 COOKIES_FILE = "youtube_cookies.txt"
 
 SUPPORTED_DOMAINS = (
@@ -41,7 +42,8 @@ SUPPORTED_DOMAINS = (
     "soundcloud.com", "twitch.tv", "vk.com", "dailymotion.com",
 )
 
-bot = Bot(token=BOT_TOKEN)
+bot = Bot(token=BOT_TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
+dp = Dispatcher()
 
 
 # ═══════════════════════════════════════════════════════════════════════
@@ -75,12 +77,13 @@ def _human_size(size: int) -> str:
 
 
 # ═══════════════════════════════════════════════════════════════════════
-# Скачивание через yt-dlp
+# Скачивание
 # ═══════════════════════════════════════════════════════════════════════
 
-async def download_media(url: str) -> Path | None:
+async def download_media(url: str) -> tuple[Path | None, str]:
     """
-    Скачивает видео/аудио через yt-dlp с обходом блокировки YouTube.
+    Скачивает видео/аудио через yt-dlp.
+    Возвращает (file_path, error_text). При успехе error_text пустой.
     """
     _clean_dir()
     output_template = str(DOWNLOAD_DIR / "%(title).100s.%(ext)s")
@@ -89,24 +92,19 @@ async def download_media(url: str) -> Path | None:
         "yt-dlp",
         "--no-playlist",
         "--max-filesize", "50M",
-        # Формат
         "--format", "bestvideo[ext=mp4][filesize<50M]+bestaudio[ext=m4a]/best[ext=mp4][filesize<50M]/best[filesize<50M]",
         "--merge-output-format", "mp4",
-        # JavaScript runtime (ОБЯЗАТЕЛЬНО для YouTube в 2026)
         "--js-runtimes", "deno",
-        # Обход n challenge
-        "--extractor-args", "youtube:player_client=default,-web_safari",
-        # Логи
         "--no-warnings",
-        "--quiet",
         "--no-progress",
         "-o", output_template,
     ]
 
-    # Cookies (если есть)
     if Path(COOKIES_FILE).exists():
         cmd.extend(["--cookies", COOKIES_FILE])
-        logger.info("Использую cookies: %s", COOKIES_FILE)
+        logger.info("Использую cookies")
+    else:
+        logger.warning("Файл cookies не найден: %s", COOKIES_FILE)
 
     cmd.append(url)
 
@@ -119,103 +117,82 @@ async def download_media(url: str) -> Path | None:
             stderr=asyncio.subprocess.PIPE,
         )
         try:
-            _, stderr = await asyncio.wait_for(
-                proc.communicate(), timeout=600
-            )
+            _, stderr = await asyncio.wait_for(proc.communicate(), timeout=300)
         except asyncio.TimeoutError:
             proc.kill()
-            logger.error("yt-dlp timeout")
-            return None
+            return None, "Таймаут скачивания"
 
         if proc.returncode != 0:
-            err_text = stderr.decode(errors="ignore")[:800]
-            logger.error("yt-dlp error (code %s): %s", proc.returncode, err_text)
-            return None
+            err = stderr.decode(errors="ignore")
+            logger.error("yt-dlp error: %s", err[:500])
+
+            if "Sign in to confirm" in err:
+                return None, "YouTube требует авторизации (нужны cookies)"
+            if "Video unavailable" in err:
+                return None, "Видео недоступно"
+            if "Private video" in err:
+                return None, "Приватное видео"
+            if "File is larger than max-filesize" in err:
+                return None, "Файл больше 50 MB"
+            return None, "Не удалось скачать"
 
         files = [
             f for f in DOWNLOAD_DIR.glob("*")
             if f.is_file() and not f.name.endswith((".part", ".ytdl"))
         ]
         if not files:
-            return None
+            return None, "Файл не найден после скачивания"
 
-        return max(files, key=lambda f: f.stat().st_size)
+        return max(files, key=lambda f: f.stat().st_size), ""
     except FileNotFoundError:
-        logger.error("yt-dlp не установлен")
-        return None
+        return None, "yt-dlp не установлен"
     except Exception as e:
-        logger.error("Ошибка скачивания: %s", e)
-        return None
+        logger.error("Ошибка: %s", e)
+        return None, "Внутренняя ошибка"
 
 
 # ═══════════════════════════════════════════════════════════════════════
-# Обработка сообщений
+# Обработчики
 # ═══════════════════════════════════════════════════════════════════════
 
-async def safe_send(chat_id: int, text: str) -> int | None:
-    try:
-        msg = await bot.send_message(chat_id, text)
-        return msg.message_id
-    except Exception as e:
-        logger.error("send failed: %s", e)
-        return None
+@dp.message(F.text == "/start")
+async def cmd_start(msg: Message):
+    await msg.answer(
+        "📥 <b>Бот для скачивания видео</b>\n\n"
+        "Отправь ссылку на видео с:\n"
+        "• YouTube, TikTok, Instagram, Twitter/X, Reddit\n"
+        "• Vimeo, SoundCloud, Twitch, VK, Dailymotion\n\n"
+        "⚠️ Максимальный размер — 50 MB"
+    )
 
 
-async def safe_edit(chat_id: int, message_id: int, text: str):
-    try:
-        await bot.edit_message_text(text, chat_id=chat_id, message_id=message_id)
-    except Exception:
-        pass
+@dp.message(F.text == "/help")
+async def cmd_help(msg: Message):
+    await msg.answer("Отправь ссылку — пришлю файл.")
 
 
-async def handle_message(msg: Message):
-    if not msg.text:
+@dp.message(F.text)
+async def handle_url(msg: Message):
+    text = msg.text.strip()
+
+    if not _is_url(text):
+        await msg.answer("❌ Это не похоже на ссылку")
         return
 
     chat_id = msg.chat.id
-    text = msg.text.strip()
-
-    if text == "/start":
-        await bot.send_message(
-            chat_id,
-            "📥 <b>Бот для скачивания видео</b>\n\n"
-            "Отправь ссылку на видео с:\n"
-            "• YouTube, TikTok, Instagram, Twitter/X, Reddit\n"
-            "• Vimeo, SoundCloud, Twitch, VK, Dailymotion\n\n"
-            "⚠️ Максимальный размер — 50 MB",
-            parse_mode="HTML",
-        )
-        return
-
-    if text == "/help":
-        await bot.send_message(chat_id, "Отправь ссылку — пришлю файл.")
-        return
-
-    if not _is_url(text):
-        await bot.send_message(chat_id, "❌ Это не похоже на ссылку")
-        return
-
     platform = _detect_platform(text)
-    status_id = await safe_send(chat_id, f"⏳ Скачиваю с {platform}...")
-    if status_id is None:
-        return
+    status = await msg.answer(f"⏳ Скачиваю с {platform}...")
 
     started = time.time()
-    file = await download_media(text)
+    file, err = await download_media(text)
 
     if not file or not file.exists():
-        await safe_edit(
-            chat_id, status_id,
-            "❌ Не удалось скачать.\n"
-            "Возможно: видео удалено, приватное или превышает 50 MB.\n\n"
-            "Для YouTube: возможно, нужно обновить cookies."
-        )
+        await status.edit_text(f"❌ {err or 'Не удалось скачать'}")
         return
 
     size = file.stat().st_size
     if size > MAX_FILE_SIZE:
-        await safe_edit(
-            chat_id, status_id,
+        await status.edit_text(
             f"❌ Файл слишком большой: {_human_size(size)} (лимит 50 MB)"
         )
         try:
@@ -225,8 +202,7 @@ async def handle_message(msg: Message):
         return
 
     elapsed = int(time.time() - started)
-    await safe_edit(
-        chat_id, status_id,
+    await status.edit_text(
         f"📤 Отправляю... ({_human_size(size)}, скачано за {elapsed} с)"
     )
 
@@ -240,7 +216,7 @@ async def handle_message(msg: Message):
             write_timeout=300,
         )
         try:
-            await bot.delete_message(chat_id, status_id)
+            await status.delete()
         except Exception:
             pass
     except Exception as e:
@@ -252,11 +228,11 @@ async def handle_message(msg: Message):
                 caption=f"📥 {file.name}",
             )
             try:
-                await bot.delete_message(chat_id, status_id)
+                await status.delete()
             except Exception:
                 pass
         except Exception as e2:
-            await safe_edit(chat_id, status_id, f"❌ Ошибка отправки: {e2}")
+            await status.edit_text(f"❌ Ошибка отправки: {e2}")
     finally:
         try:
             file.unlink()
@@ -268,41 +244,27 @@ async def handle_message(msg: Message):
 # Главный цикл
 # ═══════════════════════════════════════════════════════════════════════
 
-async def main_loop():
-    logger.info("🚀 Бот запущен (long-polling)")
-    start_time = time.time()
-
+async def main():
+    logger.info("🚀 Бот запущен")
     try:
         await bot.delete_webhook(drop_pending_updates=True)
     except Exception as e:
         logger.warning("delete_webhook: %s", e)
 
-    while True:
-        if time.time() - start_time > MAX_RUN_TIME:
-            logger.info("⏰ Достигнут лимит времени — перезапуск по cron")
-            break
+    # Ограничиваем polling по времени
+    async def stop_after_timeout():
+        await asyncio.sleep(MAX_RUN_TIME)
+        logger.info("⏰ Лимит времени — останавливаю polling")
+        await dp.stop_polling()
 
-        try:
-            updates = await bot.get_updates(timeout=30, allowed_updates=["message"])
-            for update in updates:
-                try:
-                    if update.message:
-                        asyncio.create_task(handle_message(update.message))
-                except Exception as e:
-                    logger.error("update processing: %s", e)
+    asyncio.create_task(stop_after_timeout())
 
-            if updates:
-                await asyncio.sleep(DOWNLOADS_DELAY)
-
-        except asyncio.CancelledError:
-            break
-        except Exception as e:
-            logger.error("get_updates error: %s", e)
-            await asyncio.sleep(5)
-
-    await bot.session.close()
-    logger.info("👋 Бот остановлен")
+    try:
+        await dp.start_polling(bot, allowed_updates=["message"])
+    finally:
+        await bot.session.close()
+        logger.info("👋 Бот остановлен")
 
 
 if __name__ == "__main__":
-    asyncio.run(main_loop())
+    asyncio.run(main())
