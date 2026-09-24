@@ -2,7 +2,6 @@ name: Download Bot
 
 on:
   schedule:
-    # Каждые 5 часов — даёт короткий перерыв между запусками
     - cron: '0 */5 * * *'
   workflow_dispatch:
 
@@ -16,7 +15,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 350   # ~5.8 часов (ближе к 6-часовому лимиту)
+    timeout-minutes: 350
 
     steps:
       - name: Checkout repository
@@ -32,10 +31,16 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
 
+      # Deno — обязательный JavaScript runtime для YouTube
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          pip install -U -r requirements.txt
 
       - name: Validate secrets
         env:
