@@ -31,7 +31,6 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg
 
-      # Deno — обязательный JavaScript runtime для YouTube
       - name: Install Deno
         uses: denoland/setup-deno@v2
         with:
