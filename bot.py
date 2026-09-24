@@ -1,13 +1,12 @@
 """
-Telegram-бот для скачивания видео и аудио через yt-dlp.
-Работает на GitHub Actions.
+Telegram-бот для скачивания видео через yt-dlp.
+Обходит блокировку YouTube через Deno (JS runtime) + cookies.
 """
 
 import asyncio
 import logging
 import os
 import shutil
-import tempfile
 import time
 from pathlib import Path
 
@@ -28,10 +27,13 @@ logger = logging.getLogger("download_bot")
 # ═══════════════════════════════════════════════════════════════════════
 BOT_TOKEN = os.environ["BOT_TOKEN"]
 
-MAX_FILE_SIZE = 50 * 1024 * 1024          # 50 MB — лимит Telegram Bot API
-MAX_RUN_TIME = 5 * 3600                   # 5 часов до перезапуска
+MAX_FILE_SIZE = 50 * 1024 * 1024
+MAX_RUN_TIME = 5 * 3600
 DOWNLOAD_DIR = Path("/tmp/downloads")
-DOWNLOADS_DELAY = 3                       # пауза между обработкой
+DOWNLOADS_DELAY = 3
+
+# Путь к cookies-файлу (добавляется в репозиторий или секреты)
+COOKIES_FILE = "youtube_cookies.txt"
 
 SUPPORTED_DOMAINS = (
     "youtube.com", "youtu.be", "tiktok.com", "instagram.com",
@@ -59,7 +61,6 @@ def _detect_platform(url: str) -> str:
 
 
 def _clean_dir():
-    """Удаляет папку загрузок перед новым скачиванием."""
     if DOWNLOAD_DIR.exists():
         shutil.rmtree(DOWNLOAD_DIR, ignore_errors=True)
     DOWNLOAD_DIR.mkdir(parents=True, exist_ok=True)
@@ -79,8 +80,7 @@ def _human_size(size: int) -> str:
 
 async def download_media(url: str) -> Path | None:
     """
-    Скачивает видео/аудио через yt-dlp.
-    Возвращает Path к файлу или None при ошибке.
+    Скачивает видео/аудио через yt-dlp с обходом блокировки YouTube.
     """
     _clean_dir()
     output_template = str(DOWNLOAD_DIR / "%(title).100s.%(ext)s")
@@ -89,14 +89,26 @@ async def download_media(url: str) -> Path | None:
         "yt-dlp",
         "--no-playlist",
         "--max-filesize", "50M",
+        # Формат
         "--format", "bestvideo[ext=mp4][filesize<50M]+bestaudio[ext=m4a]/best[ext=mp4][filesize<50M]/best[filesize<50M]",
         "--merge-output-format", "mp4",
+        # JavaScript runtime (ОБЯЗАТЕЛЬНО для YouTube в 2026)
+        "--js-runtimes", "deno",
+        # Обход n challenge
+        "--extractor-args", "youtube:player_client=default,-web_safari",
+        # Логи
         "--no-warnings",
         "--quiet",
         "--no-progress",
         "-o", output_template,
-        url,
     ]
+
+    # Cookies (если есть)
+    if Path(COOKIES_FILE).exists():
+        cmd.extend(["--cookies", COOKIES_FILE])
+        logger.info("Использую cookies: %s", COOKIES_FILE)
+
+    cmd.append(url)
 
     logger.info("yt-dlp: %s", url)
 
@@ -116,14 +128,10 @@ async def download_media(url: str) -> Path | None:
             return None
 
         if proc.returncode != 0:
-            logger.error(
-                "yt-dlp error (code %s): %s",
-                proc.returncode,
-                stderr.decode(errors="ignore")[:500],
-            )
+            err_text = stderr.decode(errors="ignore")[:800]
+            logger.error("yt-dlp error (code %s): %s", proc.returncode, err_text)
             return None
 
-        # Найти скачанный файл
         files = [
             f for f in DOWNLOAD_DIR.glob("*")
             if f.is_file() and not f.name.endswith((".part", ".ytdl"))
@@ -131,7 +139,6 @@ async def download_media(url: str) -> Path | None:
         if not files:
             return None
 
-        # Берём самый большой — это итоговое видео
         return max(files, key=lambda f: f.stat().st_size)
     except FileNotFoundError:
         logger.error("yt-dlp не установлен")
@@ -168,15 +175,13 @@ async def handle_message(msg: Message):
     chat_id = msg.chat.id
     text = msg.text.strip()
 
-    # Команды
     if text == "/start":
         await bot.send_message(
             chat_id,
             "📥 <b>Бот для скачивания видео</b>\n\n"
             "Отправь ссылку на видео с:\n"
             "• YouTube, TikTok, Instagram, Twitter/X, Reddit\n"
-            "• Vimeo, SoundCloud, Twitch, VK, Dailymotion\n"
-            "• Ещё 1000+ сайтов\n\n"
+            "• Vimeo, SoundCloud, Twitch, VK, Dailymotion\n\n"
             "⚠️ Максимальный размер — 50 MB",
             parse_mode="HTML",
         )
@@ -202,7 +207,8 @@ async def handle_message(msg: Message):
         await safe_edit(
             chat_id, status_id,
             "❌ Не удалось скачать.\n"
-            "Возможно: видео удалено, приватное или превышает 50 MB."
+            "Возможно: видео удалено, приватное или превышает 50 MB.\n\n"
+            "Для YouTube: возможно, нужно обновить cookies."
         )
         return
 
@@ -239,7 +245,6 @@ async def handle_message(msg: Message):
             pass
     except Exception as e:
         logger.error("send_video failed: %s", e)
-        # Пробуем как документ
         try:
             await bot.send_document(
                 chat_id=chat_id,
@@ -260,14 +265,13 @@ async def handle_message(msg: Message):
 
 
 # ═══════════════════════════════════════════════════════════════════════
-# Главный цикл (long-polling)
+# Главный цикл
 # ═══════════════════════════════════════════════════════════════════════
 
 async def main_loop():
     logger.info("🚀 Бот запущен (long-polling)")
     start_time = time.time()
 
-    # Игнорируем старые апдейты — начинаем с последних
     try:
         await bot.delete_webhook(drop_pending_updates=True)
     except Exception as e:
