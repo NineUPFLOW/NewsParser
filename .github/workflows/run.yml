@@ -1,0 +1,54 @@
+name: Download Bot
+
+on:
+  schedule:
+    # Каждые 5 часов — даёт короткий перерыв между запусками
+    - cron: '0 */5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: download-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350   # ~5.8 часов (ближе к 6-часовому лимиту)
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Validate secrets
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: |
+          python - <<'PY'
+          import os
+          if not os.getenv("BOT_TOKEN"):
+              raise SystemExit("❌ BOT_TOKEN не задан")
+          print("✅ Secrets validation passed")
+          PY
+
+      - name: Run bot
+        env:
+          BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+        run: python -u bot.py
